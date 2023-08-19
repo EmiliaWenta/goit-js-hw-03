@@ -6,7 +6,10 @@ const messageData = document.querySelector('textarea');
 const LOCALSTORAGE_KEY = 'feedback-form-state';
 const THROTTLE_INTERVAL = 500;
 
-feedbackForm.addEventListener('input', handleInput);
+feedbackForm.addEventListener(
+  'input',
+  throttle(handleInput, THROTTLE_INTERVAL)
+);
 
 function handleInput(event) {
   event.preventDefault();
