@@ -15,16 +15,44 @@ player.on(
 );
 
 const currentTime = localStorage.getItem(LOCALSTORAGE_KEY);
-
 player
-  .setCurrentTime(currentTime)
-  .then(function (seconds) {})
+  .getDuration()
+  .then(function (duration) {
+    console.log(duration);
+    // duration = the duration of the video in seconds
+  })
   .catch(function (error) {
-    switch (error.name) {
-      case 'RangeError':
-        break;
-
-      default:
-        break;
-    }
+    // an error occurred
   });
+
+function xxx() {
+  if (currentTime >= 571000) {
+    player
+      .setCurrentTime(duration)
+      .then(function (seconds) {})
+      .catch(function (error) {
+        switch (error.name) {
+          case 'RangeError':
+            break;
+
+          default:
+            break;
+        }
+      });
+  } else {
+    player
+      .setCurrentTime(currentTime)
+      .then(function (seconds) {})
+      .catch(function (error) {
+        switch (error.name) {
+          case 'RangeError':
+            break;
+
+          default:
+            break;
+        }
+      });
+  }
+}
+
+xxx();

@@ -13,13 +13,10 @@ feedbackForm.addEventListener(
 
 function handleInput(event) {
   event.preventDefault();
-  const {
-    elements: { email, message },
-  } = event.currentTarget;
 
   const object = {
-    email: email.value,
-    message: message.value,
+    email: emailData.value,
+    message: messageData.value,
   };
   localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(object));
 }
