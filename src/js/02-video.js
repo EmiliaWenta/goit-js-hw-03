@@ -19,27 +19,15 @@ player
   .getDuration()
   .then(function (duration) {
     console.log(duration);
+    return duration;
     // duration = the duration of the video in seconds
   })
   .catch(function (error) {
     // an error occurred
   });
 
-function xxx() {
-  if (currentTime >= 571000) {
-    player
-      .setCurrentTime(duration)
-      .then(function (seconds) {})
-      .catch(function (error) {
-        switch (error.name) {
-          case 'RangeError':
-            break;
-
-          default:
-            break;
-        }
-      });
-  } else {
+function checkDuration(currentTime) {
+  if (currentTime < 571) {
     player
       .setCurrentTime(currentTime)
       .then(function (seconds) {})
@@ -54,5 +42,4 @@ function xxx() {
       });
   }
 }
-
-xxx();
+checkDuration(currentTime);
