@@ -26,7 +26,7 @@ Project is created with:
 - HTML5,
 - CSS,
 - JS.
-- 
+  
 ## Setup
 
 To run this project:
