@@ -7,7 +7,6 @@
 
 - [General Info](#general-information)
 - [Technologies Used](#technologies-used)
-- [Video](#video)
 - [Setup](#setup)
 - [Project Status](#project-status)
 - [Acknowledgements](#acknowledgements)
@@ -16,10 +15,10 @@
 
 ## General Information
 
-- Task goal:
-  1. Image Gallery: using  SimpleLightbox installing for npm.
-  2. Video player: using lodash.throttle, Vimeo and localStorage to save current playback time.
-  3. Feedback form: using localStorage to save entry data.
+Task goal:
+  - Image Gallery: using  SimpleLightbox installing for npm.
+  - Video player: using lodash.throttle, Vimeo and localStorage to save current playback time.
+  - Feedback form: using localStorage to save entry data.
 
 ## Technologies Used
 
@@ -27,11 +26,7 @@ Project is created with:
 - HTML5,
 - CSS,
 - JS.
-
-## Video
-
-
-
+- 
 ## Setup
 
 To run this project:
