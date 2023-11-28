@@ -32,7 +32,7 @@ Project is created with:
 To run this project:
 
 ```
-$ cd ../goit-html-css-hw8-finalProject/
+$ cd ../goit-js-hw-08/
 $ npm install
 $ npm start
 ```
